@@ -1,3 +1,12 @@
 @charset "utf-8";
 
 body{font-family: 'Noto Sans KR', sans-serif;}
+
+
+/* common */
+body,html{height: 100%}
+.container2{width: 1600px;margin: 0 auto;}
+
+.slide2Wrap{position:relative;}
+.slide2Wrap>.txtWrap{display:block;position: absolute;}
+.swiper-slide>img{width: 100%;}

@@ -8,8 +8,125 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" 
+    integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" 
+    integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </head>
+
+<div class="section2">
+    <div class="slide2Wrap container2">
+
+        <div class="txtWrap">
+            <h3>네오포레의<br>다양한 제품을 만나보세요</h3>
+            <p>무림은 최고의 기술로 생활의 가치를 더하고 있습니다.</p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">  
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/pro1_slide1.png" alt="" class="slideItem">
+                    <a href="#">
+                        <div class="btn">
+                            <p>네오포레 CUP</p>
+                            <img src="images/pro1_slide2btn.png" alt="" class="item">
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/pro1_slide2.png" alt="" class="slideItem">
+                    <a href="#">
+                        <div class="btn">
+                            <p>네오포레 CUP</p>
+                            <img src="images/pro1_slide2btn.png" alt="">
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/pro1_slide3.png" alt="" class="slideItem">
+                    <a href="#">
+                        <div class="btn">
+                            <p>네오포레 CUP</p>
+                            <img src="images/pro1_slide2btn.png" alt="">
+                        </div>    
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/pro1_slide4.png" alt="" class="slideItem">
+                    <a href="#">
+                        <div class="btn">
+                            <p>네오포레 CUP</p>
+                            <img src="images/pro1_slide2btn.png" alt="">
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/pro1_slide5.png" alt="" class="slideItem">
+                    <a href="#">
+                        <div class="btn">
+                            <p>네오포레 CUP</p>
+                            <img src="images/pro1_slide2btn.png" alt="">
+                        </div>    
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/pro1_slide6.png" alt="" class="slideItem">
+                    <a href="#">
+                        <div class="btn">
+                            <p>네오포레 CUP</p>
+                            <img src="images/pro1_slide2btn.png" alt="">
+                        </div>    
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 0,
+          slidesPerGroup: 3,
+          loop: false,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+  
+
+
+
+
+
+
+
 <body>
     
+
+
+
 </body>
 </html>
