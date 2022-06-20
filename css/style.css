@@ -4,9 +4,30 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 
 /* common */
-body,html{height: 100%}
+body,html{height: 100%;position: relative;}
 .container2{width: 1600px;margin: 0 auto;}
 
-.slide2Wrap{position:relative;}
-.slide2Wrap>.txtWrap{display:block;position: absolute;}
-.swiper-slide>img{width: 100%;}
+#section2 .section2Wrap{position: relative;}
+#section2 .section2Wrap>.txtWrap{display:block;position: absolute;
+    top:116px;left:85px;z-index:2;
+}
+#section2 .section2Wrap>.txtWrap h3{font-size:36px;font-weight:700;margin-bottom: 42px;}
+#section2 .section2Wrap>.txtWrap p{font-size:16px;}
+
+#section2 .swiper-slide>img{width: 100%;transition:0.3s;}
+#section2 .swiper-slide a{position:absolute;bottom:52px;right:52px;}
+#section2 .swiper-slide .btn{display:flex;justify-content:center;align-items:center;
+    width:154px;height:34px;border: 1px solid #646464;border-radius:15px;
+    letter-spacing:-1.6px;line-height:26px;color:#222;
+}
+#section2 .swiper-slide .btn p{font-size:16px;font-weight:500;;margin-right: 10px;}
+#section2 .swiper-slide a:hover .btn{background-color: #000;color:#fff;}
+
+#section2 .swiper-button-next,
+#section2 .swiper-button-prev{position: absolute;bottom: -50%;}
+#section2 .swiper-button-next,
+#section2 .swiper-button-prev:after{color:#000;}
+#section2 .swiper-pagination{width: 136px;height:54px;
+    left:0;background-color: #fff;bottom:0;
+    display:flex;justify-content:center;align-items:center;}
+#section2 .swiper-pagination-bullet{background-color:#000;}
