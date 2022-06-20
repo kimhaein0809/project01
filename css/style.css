@@ -1,3 +1,115 @@
 @charset "utf-8";
-
 body{font-family: 'Noto Sans KR', sans-serif;}
+
+/* COMMONLY USED */
+.position-re {position: relative;}
+.position-ab {position: absolute;}
+
+/* THEME */
+.fonts-black {color: rgb(0, 0, 0);}
+.fonts-white {color: rgb(255, 255, 255);}
+
+/* FONTS SETTINGS */
+.fonts-gnb {font-size: 15px; font-weight: 500; letter-spacing: -0.75px; line-height: 19.2px;}
+.fonts-eng {font-family: 'Lexend', sans-serif;}
+.fonts-eng-gnb {font-size: 15px; font-weight: 600; letter-spacing: -1.6px; line-height: 19.2px;}
+.fonts-gnb-submenu {font-size: 14px; letter-spacing: 0.05em;}
+.fonts-headline {font-size: 60px; font-weight: 700; letter-spacing: 1px; line-height: 1; /* use <h4> tag */}
+.fonts-headline-sub {font-size: 22px; letter-spacing: -1.6px; line-height: 28.16px;}
+.fonts-btn {font-size: 16px; letter-spacing: -1.6px; line-height: 36px;}
+
+/* HEADER LAYOUTS */
+#header {
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+.wrap-header {
+    padding: 30px 80px;
+    display: flex; justify-content: space-between; align-items: center;
+    background-color: #fff;
+}
+
+.wrap-header a:link,
+.wrap-header a:hover {
+    color: black;
+}
+
+.wrap-header .gnb>ul,
+.wrap-header .utility>ul {
+    padding-right: 24px;
+    display: flex;
+    /* gap: 80px; */
+}
+
+.wrap-header .gnb>ul {
+    gap: 96px;
+}
+
+.wrap-header .utility>ul {
+    gap: 48px;
+}
+
+/* BANNER-MAIN LAYOUTS */
+.swiper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.swiper-slide:nth-child(1) {
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(2) {
+    background-image: url(../images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(3) {
+    background-image: url(../images/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper .banner-text {
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.banner-text h4 {
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    margin-bottom: 50px;
+}
+
+.banner-text a {
+    padding: 7px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.banner-text a:hover {
+    background-color: #1DCB5D;
+    border: 1px solid #1DCB5D;
+}
+
+.banner-main img {
+    z-index: 9;
+    top: 12%;
+    right: 9%;
+}
