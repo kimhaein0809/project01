@@ -499,7 +499,9 @@ h1{font-size: 40px;letter-spacing: -1.6px;}
     background: rgba(0,0,0,0.2);
     border-radius: 50%;
     cursor: pointer;
+    z-index: 1000;transition: .2s;
 }
+.footer .goTop:hover{background: #222;}
 .footer .goTop i{
     position: relative;
     left: 16px;
@@ -512,7 +514,7 @@ h1{font-size: 40px;letter-spacing: -1.6px;}
 .footer .goTop i:before{
     position: absolute;
     display: block;content: "";
-    right: 2.5px;top: -2px;
+    right: 3px;top: -2px;
     width: 3px;height: 10px;
     transform: rotate(45deg);
     background: white;
