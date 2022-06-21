@@ -245,48 +245,47 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 /* BANNER-MAIN LAYOUTS */
-.swiper {
-    width: 100vw;
+.swiper.banner-main {
     height: 100vh;
 }
 
-.swiper-slide:nth-child(1) {
+.banner-main .swiper-slide:nth-child(1) {
     background-image: url(../images/bg1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.swiper-slide:nth-child(2) {
+.banner-main .swiper-slide:nth-child(2) {
     background-image: url(../images/bg2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.swiper-slide:nth-child(3) {
+.banner-main .swiper-slide:nth-child(3) {
     background-image: url(../images/bg3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.banner-main .swiper-horizontal>.swiper-pagination-bullets,
+.banner-main .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 35%;
     left: 50%;
     width: 100px;
     transform: translateX(-50%);
 }
 
-.swiper-pagination-bullet {
+.banner-main .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
     background: none;
     border: 1px solid #FFFFFF;
 }
 
-.swiper-pagination-bullet-active {
+.banner-main .swiper-pagination-bullet-active {
     background-color: #FFFFFF;
     border: none;
 }
@@ -314,6 +313,12 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     border-radius: 20px;
 
     transition: 0.3s;
+}
+
+.banner-text a:link,
+.banner-text a:visited,
+.banner-text a:hover {
+    color:rgb(255, 255, 255);
 }
 
 .banner-text a:hover {
@@ -429,33 +434,49 @@ h1{font-size: 40px;letter-spacing: -1.6px;}
 
 .secBottomWrap .btn:hover{background-color: #1dcb5d;}
 .secBottomWrap .btn:hover .btn>img{background-color: #fff;}
+
+.banner-main a i,
 .secBottomWrap .btn i{
     position: relative;
     left: 4px;
-    top: 1px;
+    top: 0px;
     display: inline-block;
     background: #1dcb5d;
     width: 11px;
     height: 2px;
+    transition: .2s;
 }
+.banner-main a:hover i,.banner-main a:hover i:before,.banner-main a:hover i:after,
+.secBottomWrap .btn:hover i,.secBottomWrap .btn:hover i:before,.secBottomWrap .btn:hover i:after{background: white;}
+
+.banner-main a i{
+    top: -6px;
+}
+
+.banner-main a i::before,
 .secBottomWrap .btn i:before{
     position: absolute;
     display: block;content: "";
-    right: 0;top: -2px;
+    right: -1px;top: -2px;
     width: 6px;height: 2px;
     transform: rotate(45deg);
     background: #1dcb5d;
-    ;
+    transition: .2s;
 }
+
+.banner-main a i::after,
 .secBottomWrap .btn i:after{
-    position: relative;
-    left: 4px;
-    top: 1px;
-    display: inline-block;
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    display: block;content: "";
     background: #1dcb5d;
-    width: 11px;
+    transform: rotate(135deg);
+    width: 6px;
+    transition: .2s;
     height: 2px;
 }
+
 
 
 
