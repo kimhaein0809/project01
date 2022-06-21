@@ -8,9 +8,12 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/neoforet_favicon.ico">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" 
@@ -20,10 +23,130 @@
     integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <header id="header" class="position-ab">
+        <div class="wrap-header">
+            <h1>
+                <a href="#"><img src="images/main_logo_color.png" alt="네오포레"></a>
+            </h1>
+            <nav class="gnb">
+                <ul class="fonts-gnb">
+                    <li>
+                        <a href="#"><span>네오포레</span></a>
+                        <div class="gnb-submenu company-info">
+                            <ul>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">Why 네오포레?</a></li>
+                                <li><a href="#">네오포레 History</a></li>
+                                <li><a href="#">Brand Identity</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span>제품</span></a>
+                        <div class="gnb-submenu product-list">
+                            <ul>
+                                <li><a href="#">식품용</a></li>
+                                <li><a href="#">산업용</a></li>
+                                <li><a href="#">펄프 몰드</a></li>
+                                <li><a href="#">바이오플라스틱</a></li>
+                                <li><a href="#">신제품개발현황</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span>환경 인증</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>환경 경영</span></a>
+                        <div class="gnb-submenu environment-management">
+                            <ul>
+                                <li><a href="#">저탄소 공정</a></li>
+                                <li><a href="#">지속가능 순환 시스템</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span>제조 공정</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span>PR</span></a>
+                        <div class="gnb-submenu public-relation">
+                            <ul>
+                                <li><a href="#">무림뉴스</a></li>
+                                <li><a href="#">영상</a></li>
+                                <li><a href="#">종이와 환경에 대한 진실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span>고객 지원</span></a>
+                        <div class="gnb-submenu customer-service">
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">온라인 문의</a></li>
+                                <li><a href="#">담당자 연락처</a></li>
+                                <li><a href="#">제품 카탈로그</a></li>
+                                <li><a href="#">샘플 신청</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="utility">
+                <ul>
+                    <li class="fonts-eng fonts-eng-gnb utility-sns">
+                        <a href="#">SNS</a>
+                        <div class="utility-submenu">
+                            <ul>
+                                <li><a href="#">카카오톡</a></li>
+                                <li><a href="#">네이버 블로그</a></li>
+                                <li><a href="#">인스타그램</a></li>
+                                <li><a href="#">페이스북</a></li>
+                                <li><a href="#">유튜브</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="fonts-eng fonts-eng-gnb utility-language">
+                        <a href="#">KR</a>
+                        <div class="utility-submenu">
+                            <ul>
+                                <li><a href="#">KR</a></li>
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="swiper banner-main position-re">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+        <div class="banner-text position-ab">
+            <h4 class="fonts-headline fonts-white">Return to forest</h4>
+            <p class="fonts-headline-sub fonts-white">숲으로 돌아가는 종이, 네오포레</p>
+            <a href="#" class="fonts-btn">브랜드 스토리 자세히 보기</a>
+        </div>
+        <img src="images/emblem.png" alt="앰블램" class="position-ab">
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".banner-main", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 
     <div id="section2">
         <div class="section2Wrap container2">
