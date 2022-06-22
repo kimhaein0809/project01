@@ -25,10 +25,16 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     z-index: 5;
 }
 
+.wrap-wrap-header {
+    /* width: 100%; */
+    background-color: #fff;
+}
+
 .wrap-header {
     /* padding: 0 80px; */
+    margin: 0 auto;
+    max-width: 1600px;
     display: flex; justify-content: space-between; align-items: center;
-    background-color: #fff;
 }
 
 .wrap-header .gnb {
