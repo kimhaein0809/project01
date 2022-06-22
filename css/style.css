@@ -26,7 +26,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .wrap-header {
-    padding: 0 80px;
+    /* padding: 0 80px; */
     display: flex; justify-content: space-between; align-items: center;
     background-color: #fff;
 }
@@ -373,7 +373,12 @@ body,html{height: 100%;position: relative;}
 
 
 .neonews{padding: 160px 0 60px 0;}
-.newsCon{min-width: 1280px;max-width: 1600px;margin: 0 auto;padding: 0 80px;}
+.newsCon{
+    /* min-width: 1280px; */
+    max-width: 1600px;
+    margin: 0 auto;
+    /* padding: 0 80px; */
+}
 h1{font-size: 40px;letter-spacing: -1.6px;}
 .newsCon .sub{font-size: 18px;color: #222;margin: 15px 0 50px;padding: 0 20px;letter-spacing: -1.6px;}
 .newsCon .cardWrap{display: flex;justify-content: space-between;}
@@ -408,7 +413,12 @@ h1{font-size: 40px;letter-spacing: -1.6px;}
 
 /* sectionBottom */
 
-.secBottomWrap{width: 1440px;height: 140px;margin: 0 auto;margin-top: 80px;}
+.secBottomWrap{
+    width: 1600px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
 .secBottomWrap ul{display: flex;justify-content:space-between;}
 .secBottomWrap li{height: 140px;width: 100%;;border-radius:10px;display:flex;
     justify-content:space-between;align-items:center;margin-right: 30px;padding:0 25px;
@@ -487,7 +497,7 @@ h1{font-size: 40px;letter-spacing: -1.6px;}
 }
 .footCon{
     position: relative;
-    min-width: 1280px;
+    /* min-width: 1280px; */
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 80px;
